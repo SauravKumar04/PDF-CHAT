@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://docchat.ai/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow admin areas (if any)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /uploads/
+
+# Allow important assets
+Allow: /favicon.ico
+Allow: /favicon.svg
+Allow: /robots.txt
+Allow: /sitemap.xml

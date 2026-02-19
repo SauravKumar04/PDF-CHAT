@@ -1,0 +1,61 @@
+{
+  "name": "docchat-server",
+  "displayName": "DOCCHAT Server - AI Document Processing Backend",
+  "description": "Backend server for DOCCHAT - Handles PDF processing, AI chat, and RAG functionality",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "homepage": "https://docchat.ai",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/docchat.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "ai",
+    "pdf",
+    "rag",
+    "langchain",
+    "groq",
+    "document-processing"
+  ],
+  "author": {
+    "name": "DOCCHAT Team",
+    "email": "contact@docchat.ai",
+    "url": "https://docchat.ai"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "node prepare.js",
+    "chat": "node chatbot.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@huggingface/transformers": "^3.8.1",
+    "@langchain/community": "^1.1.16",
+    "@langchain/core": "^1.1.26",
+    "@langchain/openai": "^1.2.8",
+    "@langchain/pinecone": "^1.0.1",
+    "@langchain/textsplitters": "^1.0.1",
+    "@xenova/transformers": "^2.17.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.3.1",
+    "express": "^4.18.2",
+    "groq-sdk": "^0.37.0",
+    "langchain": "^1.2.25",
+    "multer": "^1.4.4",
+    "pdf-parse": "^1.1.4",
+    "pdf-parser": "^1.0.5"
+  }
+}
